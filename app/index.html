@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum Path — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="site-header">
+  <div class="header-text">
+    <h1>Leonida Platinum Path</h1>
+    <p class="tagline">The Grand Theft Auto VI trophy guide &amp; tracker — all 55 PlayStation 5 trophies,
+    each with its official name, description and grade, a guide in our own words, and the sources that guide stands on.</p>
+  </div>
+  <section id="progress-panel" aria-label="Your progress">
+    <div class="progress-numbers">
+      <span id="earned-count">0 of 55</span>
+      <span id="earned-points">0 / 1350 pts</span>
+    </div>
+    <div class="progress-track"><div id="progress-bar"></div></div>
+    <p id="progress-note">Progress is saved in this browser. Points use the standard PlayStation values: bronze 15, silver 30, gold 90, platinum 300.</p>
+  </section>
+</header>
+
+<nav id="view-tabs" aria-label="Views">
+  <button id="tab-guide" class="tab active" type="button">Guide &amp; Tracker</button>
+  <button id="tab-roadmap" class="tab" type="button">Roadmap to the Platinum</button>
+</nav>
+
+<main>
+  <section id="guide-view">
+    <div id="toolbar">
+      <label class="tool grow">Search
+        <input id="search-box" type="search" placeholder="Trophy, mission, character…">
+      </label>
+      <label class="tool">Grade
+        <select id="grade-filter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="tool">Status
+        <select id="status-filter">
+          <option value="all">All trophies</option>
+          <option value="earned">Earned</option>
+          <option value="open">Not yet earned</option>
+        </select>
+      </label>
+      <label class="tool check">
+        <input id="spoiler-toggle" type="checkbox">
+        Spoiler shield: hide story trophies until earned
+      </label>
+      <div class="tool buttons">
+        <button id="export-button" type="button">Export checklist</button>
+        <button id="import-button" type="button">Import checklist</button>
+        <input id="import-file" type="file" accept="application/json,.json" hidden>
+      </div>
+    </div>
+
+    <div id="kind-filters" role="group" aria-label="Filter by kind"></div>
+    <p id="online-note" hidden>The official PlayStation list for GTA VI contains <strong>no online trophies</strong> —
+    every one of the 55 is earned in the game itself, so the online filter has nothing to show.</p>
+
+    <div id="guide-layout">
+      <ol id="trophy-list"></ol>
+      <article id="trophy-detail" aria-live="polite"></article>
+    </div>
+  </section>
+
+  <section id="roadmap-view" hidden>
+    <div id="missable-panel"></div>
+    <div id="roadmap-stages"></div>
+    <p class="fineprint">The roadmap's order and every missable flag are built from the official descriptions alone:
+    chapter and mission names, collectible counts and one-chance wording. Where a step is this guide's own inference
+    from that wording, the trophy's guide says so beside it.</p>
+  </section>
+</main>
+
+<footer id="site-footer">
+  <p>Trophy names, descriptions and grades are the official PlayStation list for Grand Theft Auto VI on PS5,
+  as listed by Exophase and PSNProfiles, and are shown as published. Every guide here is written for this app and
+  cites its sources beside it. 28 of the 55 trophies are hidden on PlayStation until earned; this guide shows their
+  published names and descriptions because a guide that hid them could not guide. Not affiliated with Rockstar Games
+  or PlayStation; no official artwork is used — the look is this app's own.</p>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
