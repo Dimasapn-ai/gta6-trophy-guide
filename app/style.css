@@ -228,8 +228,9 @@ button:hover { border-color: var(--sun); }
   padding: 1.1rem 1.2rem;
 }
 
-#trophy-detail h2 { margin: 0.4rem 0 0.2rem; font-size: 1.45rem; }
-#trophy-detail h3 { margin: 1rem 0 0.3rem; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--sun); }
+#trophy-detail h2 { margin: 0.35rem 0 0.15rem; font-size: 1.38rem; }
+#trophy-detail h3 { margin: 0.85rem 0 0.25rem; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--sun); }
+#trophy-detail .guide-text { font-size: 0.97rem; }
 #trophy-detail p { margin: 0.3rem 0; }
 
 .official-quote {

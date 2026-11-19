@@ -118,6 +118,7 @@ export function renderTrophyDetail(detailEl, trophy, view, handlers) {
   const earned = view.earned.has(trophy.id);
 
   const meta = el("div", "detail-meta");
+  meta.appendChild(el("span", "kind-tag", `Trophy ${trophy.id} of ${view.trophies.length}`));
   meta.appendChild(el("span", `grade-badge grade-${trophy.grade}`,
     `${trophy.grade} · ${GRADE_POINTS[trophy.grade]} pts`));
   meta.appendChild(el("span", "kind-tag", KIND_LABELS[trophy.kind] ?? trophy.kind));
@@ -150,7 +151,7 @@ export function renderTrophyDetail(detailEl, trophy, view, handlers) {
         `Tracked target: ${trophy.count.toLocaleString("en-US")} — the count in the official description.`));
     }
     detailEl.appendChild(el("h3", null, "Guide"));
-    detailEl.appendChild(el("p", null, trophy.guide));
+    detailEl.appendChild(el("p", "guide-text", trophy.guide));
     detailEl.appendChild(el("h3", null, "Sources — where this guide's facts come from"));
     const sources = el("ul", "sources-list");
     for (const source of trophy.sources) sources.appendChild(el("li", null, source));
